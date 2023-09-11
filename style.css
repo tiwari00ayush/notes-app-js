@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.fa-trash {
+  color: black;
+  position: absolute;
+  bottom: 2px;
+  right: 3px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #222;
+  color: white;
+  padding-top: 4%;
+  padding-left: 10%;
+}
+.container h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.container button {
+  font-size: 15px;
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+  background-image: linear-gradient(
+    to right,
+    #8d5ddf 0%,
+    #372283 51%,
+    #8d5ddf 100%
+  );
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+}
+.container button:hover {
+  background-position: right center;
+}
+.note {
+  position: relative;
+  max-width: 500px;
+  min-height: 150px;
+  margin: 20px 0;
+}
+.notes-container .input-box {
+  max-width: 500px;
+  min-height: 150px;
+  background-color: white;
+  color: black;
+  outline: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
