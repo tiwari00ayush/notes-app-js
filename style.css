@@ -5,10 +5,7 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-.notes-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+
 .fa-trash {
   color: black;
   position: absolute;
@@ -23,8 +20,7 @@
   min-height: 100vh;
   background-color: #222;
   color: white;
-  padding-top: 4%;
-  padding-left: 10%;
+  padding: 4% 10%;
 }
 .container h1 {
   font-size: 35px;
@@ -56,12 +52,12 @@
 }
 .note {
   position: relative;
-  max-width: 500px;
+  width: 100%;
   min-height: 150px;
   margin: 20px 0;
 }
 .notes-container .input-box {
-  max-width: 500px;
+  width: 100%;
   min-height: 150px;
   background-color: white;
   color: black;
